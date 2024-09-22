@@ -1,6 +1,5 @@
 <template>
-  <div>
+  <div class="w-full max-w-[1280px] mx-auto px-2">
     <Header />
-    <h1 class="text-5xl font-poppins">Hello</h1>
   </div>
 </template>

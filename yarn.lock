@@ -4803,6 +4803,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lucide-vue-next@npm:^0.445.0":
+  version: 0.445.0
+  resolution: "lucide-vue-next@npm:0.445.0"
+  peerDependencies:
+    vue: ">=3.0.1"
+  checksum: 10c0/845ff7beaed174a668806d7ef82f66314d5b807a3a385cbdc71430ec81069d05861bb2c8db573f65193c0b617fabf4c4dc5839a7e91217b27c77c7315f794f93
+  languageName: node
+  linkType: hard
+
 "magic-string-ast@npm:^0.6.2":
   version: 0.6.2
   resolution: "magic-string-ast@npm:0.6.2"
@@ -5405,6 +5414,7 @@ __metadata:
   dependencies:
     "@nuxtjs/google-fonts": "npm:^3.2.0"
     autoprefixer: "npm:^10.4.20"
+    lucide-vue-next: "npm:^0.445.0"
     nuxt: "npm:^3.13.0"
     postcss: "npm:^8.4.47"
     tailwindcss: "npm:^3.4.12"
