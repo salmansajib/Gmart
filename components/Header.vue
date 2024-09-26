@@ -120,7 +120,7 @@ const navLinks = [
               :key="link.text"
             >
               <NuxtLink
-                class="text-sm text-bgclr/85 hover:text-bgclr transition-colors duration-200"
+                class="text-sm text-bgclr/90 hover:text-bgclr"
                 :to="link.to"
                 >{{ link.text }}</NuxtLink
               >

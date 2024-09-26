@@ -64,10 +64,12 @@ const footerLinks = [
 </script>
 
 <template>
-  <footer class="w-full">
+  <footer class="w-full mt-10">
     <div class="container mx-auto px-2">
       <!-- footer links -->
-      <div class="flex flex-wrap gap-4 justify-between">
+      <div
+        class="grid justify-items-left md:justify-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
+      >
         <div v-for="(section, index) in footerLinks" :key="index">
           <h3 class="text-[18px] font-semibold text-textclr">
             {{ section.category }}
@@ -86,7 +88,7 @@ const footerLinks = [
 
       <!-- contact info -->
       <div
-        class="flex items-center justify-between mt-12 border-[#E5EBDA] border-t border-b py-5"
+        class="flex flex-wrap gap-8 items-center justify-center lg:justify-between mt-12 border-[#E5EBDA] border-t border-b py-5"
       >
         <div class="flex items-center gap-3">
           <div class="bg-primaryclr max-w-max rounded-full p-4">
@@ -248,7 +250,7 @@ const footerLinks = [
 
       <!-- copyright info -->
       <div>
-        <p class="text-[18px] font-medium text-textclr/70 text-center p-12">
+        <p class="text-[18px] font-medium text-textclr/70 text-center pt-8">
           Copyright &copy; 2009 - 2024 Thecodude Inc.
         </p>
       </div>
