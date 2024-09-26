@@ -1,13 +1,25 @@
 <script setup>
 const totalItemsInCart = ref(8);
+
+const navLinks = [
+  { text: "Home", to: "#" },
+  { text: "Story", to: "#" },
+  { text: "Combo", to: "#" },
+  { text: "Offer", to: "#" },
+  { text: "Explore", to: "#" },
+];
 </script>
 
 <template>
   <div>
     <!-- Upper part of the header -->
-    <div class="flex items-center justify-between">
+    <div
+      class="flex items-center justify-between w-full container mx-auto px-2"
+    >
       <!-- logo -->
-      <img src="../assets/images/logo/Layer_1.png" alt="logo" />
+      <NuxtLink to="/">
+        <img src="../assets/images/logo/Layer_1.png" alt="logo" />
+      </NuxtLink>
       <!-- search field -->
       <div class="relative max-w-[450px] w-full h-[45px]">
         <input
@@ -30,7 +42,7 @@ const totalItemsInCart = ref(8);
           />
           <p class="text-[14px] font-normal text-textclr">New York, USA</p>
         </button>
-        <NuxtLink to="/cart" class="flex items-center gap-1">
+        <NuxtLink to="#" class="flex items-center gap-1">
           <div class="relative">
             <img
               src="../assets/icons/header-icons/Shopping bag.png"
@@ -44,7 +56,7 @@ const totalItemsInCart = ref(8);
           </div>
           <p class="text-[14px] font-normal text-textclr">My Bag</p>
         </NuxtLink>
-        <NuxtLink to="/signin" class="flex items-center gap-1">
+        <NuxtLink to="#" class="flex items-center gap-1">
           <img
             src="../assets//icons/header-icons/Refer.png"
             alt="sign in icon"
@@ -55,6 +67,80 @@ const totalItemsInCart = ref(8);
     </div>
 
     <!-- lower part of the header -->
-    <div></div>
+    <div class="bg-primaryclr mt-7 py-3 w-full">
+      <div class="flex items-center justify-between container mx-auto px-2">
+        <div class="flex items-center gap-2">
+          <button
+            class="group p-0 border-none bg-transparent cursor-pointer inline-flex items-center justify-center"
+          >
+            <svg
+              width="25"
+              height="16"
+              viewBox="0 0 25 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                class="top-line transition-all duration-300"
+                x="5"
+                width="15"
+                height="2"
+                rx="1"
+                fill="white"
+              />
+              <rect
+                class="middle-line"
+                y="7"
+                width="25"
+                height="2"
+                rx="1"
+                fill="white"
+              />
+              <rect
+                class="bottom-line transition-all duration-300"
+                x="5"
+                y="14"
+                width="15"
+                height="2"
+                rx="1"
+                fill="white"
+              />
+            </svg>
+          </button>
+
+          <p class="text-[15px] font-medium text-bgclr">Categories</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav>
+          <ul class="flex items-center gap-10">
+            <li
+              class="flex items-center"
+              v-for="link in navLinks"
+              :key="link.text"
+            >
+              <NuxtLink
+                class="text-sm text-bgclr/85 hover:text-bgclr transition-colors duration-200"
+                :to="link.to"
+                >{{ link.text }}</NuxtLink
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Rating -->
+        <div>
+          <StarRating :rating="4.5" :reviewsCount="3400" />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+
+<style scoped>
+.group:hover .top-line,
+.group:hover .bottom-line {
+  width: 25px; /* Expand to full width */
+  x: 0; /* Move to the far left (0 position) to expand from both sides */
+}
+</style>
