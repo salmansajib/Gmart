@@ -14,11 +14,11 @@ const navLinks = [
   <div>
     <!-- Upper part of the header -->
     <div
-      class="flex items-center justify-between w-full container mx-auto px-2"
+      class="flex items-center justify-between w-full max-w-[95%] md:container mx-auto"
     >
       <!-- logo -->
       <NuxtLink to="/">
-        <img src="../assets/images/logo/Layer_1.png" alt="logo" />
+        <img src="/images/logo/Layer_1.png" alt="logo" />
       </NuxtLink>
       <!-- search field -->
       <div class="relative max-w-[450px] w-full h-[45px]">
@@ -29,23 +29,20 @@ const navLinks = [
         />
         <img
           class="absolute top-1/2 -translate-y-1/2 right-[12px] text-green-700 cursor-pointer"
-          src="../assets/icons/header-icons/Magnifying glass.png"
+          src="/icons/header-icons/Magnifying glass.png"
           alt="magnifying glass icon"
         />
       </div>
       <!-- location, cart, sign in -->
       <div class="flex items-center gap-8">
         <button class="flex items-center gap-1">
-          <img
-            src="../assets/icons/header-icons/Address.png"
-            alt="location icon"
-          />
+          <img src="/icons/header-icons/Address.png" alt="location icon" />
           <p class="text-[14px] font-normal text-textclr">New York, USA</p>
         </button>
         <NuxtLink to="#" class="flex items-center gap-1">
           <div class="relative">
             <img
-              src="../assets/icons/header-icons/Shopping bag.png"
+              src="/icons/header-icons/Shopping bag.png"
               alt="shopping cart icon"
             />
             <p
@@ -57,10 +54,7 @@ const navLinks = [
           <p class="text-[14px] font-normal text-textclr">My Bag</p>
         </NuxtLink>
         <NuxtLink to="#" class="flex items-center gap-1">
-          <img
-            src="../assets//icons/header-icons/Refer.png"
-            alt="sign in icon"
-          />
+          <img src="/icons/header-icons/Refer.png" alt="sign in icon" />
           <p class="text-[14px] font-normal text-textclr">Sign in</p>
         </NuxtLink>
       </div>
@@ -68,7 +62,9 @@ const navLinks = [
 
     <!-- lower part of the header -->
     <div class="bg-primaryclr mt-7 py-3 w-full">
-      <div class="flex items-center justify-between container mx-auto px-2">
+      <div
+        class="flex items-center justify-between max-w-[95%] md:container mx-auto"
+      >
         <div class="flex items-center gap-2">
           <button
             class="group p-0 border-none bg-transparent cursor-pointer inline-flex items-center justify-center"

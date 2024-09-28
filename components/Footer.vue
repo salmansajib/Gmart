@@ -65,19 +65,19 @@ const footerLinks = [
 
 <template>
   <footer class="w-full mt-10">
-    <div class="container mx-auto px-2">
+    <div class="max-w-[95%] md:container mx-auto">
       <!-- footer links -->
       <div
         class="grid justify-items-left md:justify-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
       >
         <div v-for="(section, index) in footerLinks" :key="index">
-          <h3 class="text-[18px] font-semibold text-textclr">
+          <h3 class="text-[16px] md:text-[18px] font-semibold text-textclr">
             {{ section.category }}
           </h3>
           <ul class="mt-4 space-y-2">
             <li v-for="(link, linkIndex) in section.links" :key="linkIndex">
               <NuxtLink
-                class="text-textclr/70 hover:text-textclr"
+                class="text-textclr/70 text-[14px] md:text-[16px] hover:text-textclr"
                 :to="link.url"
                 >{{ link.name }}</NuxtLink
               >
@@ -135,7 +135,11 @@ const footerLinks = [
         </div>
 
         <div class="flex items-center gap-4">
-          <NuxtLink to="#" class="border border-[#D0E0B6] rounded-full p-4">
+          <a
+            to="#"
+            target="_blank"
+            class="border text-secondaryclr border-[#D0E0B6] rounded-full p-4 cursor-pointer hover:bg-secondaryclr hover:text-bgclr transition-colors"
+          >
             <svg
               width="16"
               height="16"
@@ -145,11 +149,15 @@ const footerLinks = [
             >
               <path
                 d="M5.21251 14.007C10.8732 14.007 13.9688 9.31731 13.9688 5.25075C13.9688 5.11756 13.966 4.98491 13.96 4.853C14.5609 4.41856 15.0831 3.87643 15.4952 3.25935C14.9438 3.50455 14.3503 3.66939 13.7279 3.74396C14.3632 3.36282 14.851 2.76014 15.0811 2.0417C14.4865 2.39422 13.828 2.65034 13.1269 2.78867C12.5654 2.19049 11.7657 1.81641 10.8804 1.81641C9.18101 1.81641 7.80274 3.19458 7.80274 4.89346C7.80274 5.13508 7.8298 5.36991 7.88255 5.5952C5.32479 5.4665 3.05663 4.24198 1.53893 2.37982C1.27475 2.83454 1.12229 3.36291 1.12229 3.92669C1.12229 4.99427 1.66561 5.937 2.49175 6.4883C1.98686 6.4728 1.51261 6.33419 1.09798 6.10349C1.09752 6.11642 1.09752 6.12899 1.09752 6.14275C1.09752 7.63321 2.15831 8.87764 3.56666 9.15962C3.30798 9.22998 3.03581 9.26787 2.75511 9.26787C2.55715 9.26787 2.36415 9.24842 2.17665 9.21237C2.56844 10.4352 3.70463 11.3249 5.05162 11.3499C3.99826 12.1755 2.67136 12.6673 1.22925 12.6673C0.981204 12.6673 0.736005 12.653 0.495117 12.6246C1.85715 13.4976 3.47447 14.0071 5.2126 14.0071"
-                fill="#5A801B"
+                fill="currentColor"
               />
             </svg>
-          </NuxtLink>
-          <NuxtLink to="#" class="border border-[#D0E0B6] rounded-full p-4">
+          </a>
+          <a
+            to="#"
+            target="_blank"
+            class="border text-secondaryclr border-[#D0E0B6] rounded-full p-4 cursor-pointer hover:bg-secondaryclr hover:text-bgclr transition-colors"
+          >
             <svg
               width="16"
               height="16"
@@ -160,15 +168,15 @@ const footerLinks = [
               <g clip-path="url(#clip0_142_59)">
                 <path
                   d="M15.9843 4.70404C15.9468 3.8539 15.8094 3.26944 15.6124 2.76299C15.4093 2.22541 15.0967 1.74411 14.6872 1.34401C14.2871 0.937683 13.8026 0.621948 13.2713 0.421957C12.7619 0.22502 12.1805 0.0875415 11.3303 0.0500586C10.4738 0.00940124 10.2019 0 8.02964 0C5.85734 0 5.58544 0.00940124 4.73212 0.0468842C3.88198 0.0843671 3.29751 0.221967 2.79119 0.418783C2.25349 0.621948 1.77219 0.934509 1.37209 1.34401C0.965759 1.74411 0.650146 2.22858 0.450034 2.75994C0.253096 3.26944 0.115618 3.85073 0.0781348 4.70087C0.0374774 5.55736 0.0280762 5.82926 0.0280762 8.00156C0.0280762 10.1739 0.0374774 10.4458 0.0749603 11.2991C0.112443 12.1492 0.250043 12.7337 0.446981 13.2401C0.650146 13.7777 0.965759 14.259 1.37209 14.6591C1.77219 15.0654 2.25666 15.3812 2.78802 15.5812C3.29751 15.7781 3.8788 15.9156 4.72907 15.9531C5.58226 15.9907 5.85429 15.9999 8.02659 15.9999C10.1989 15.9999 10.4708 15.9907 11.3241 15.9531C12.1742 15.9156 12.7587 15.7781 13.265 15.5812C14.3403 15.1654 15.1905 14.3153 15.6062 13.2401C15.803 12.7306 15.9406 12.1492 15.9781 11.2991C16.0156 10.4458 16.025 10.1739 16.025 8.00156C16.025 5.82926 16.0218 5.55736 15.9843 4.70404ZM14.5435 11.2366C14.5091 12.018 14.3778 12.4399 14.2684 12.7212C13.9996 13.4183 13.4463 13.9715 12.7493 14.2403C12.468 14.3497 12.043 14.481 11.2646 14.5153C10.4207 14.5529 10.1676 14.5622 8.03281 14.5622C5.898 14.5622 5.64172 14.5529 4.80086 14.5153C4.01946 14.481 3.5975 14.3497 3.31619 14.2403C2.96932 14.1121 2.65359 13.909 2.39731 13.6433C2.13164 13.3838 1.92847 13.0713 1.80027 12.7244C1.69088 12.4431 1.55963 12.018 1.52532 11.2397C1.48771 10.3958 1.47843 10.1426 1.47843 8.00779C1.47843 5.87297 1.48771 5.6167 1.52532 4.77596C1.55963 3.99455 1.69088 3.5726 1.80027 3.29129C1.92847 2.9443 2.13164 2.62869 2.40049 2.37229C2.65982 2.10661 2.97238 1.90345 3.31937 1.77537C3.60067 1.66597 4.02581 1.53472 4.80403 1.50029C5.64795 1.46281 5.90117 1.45341 8.03587 1.45341C10.1739 1.45341 10.427 1.46281 11.2678 1.50029C12.0492 1.53472 12.4712 1.66597 12.7525 1.77537C13.0994 1.90345 13.4151 2.10661 13.6714 2.37229C13.937 2.63174 14.1402 2.9443 14.2684 3.29129C14.3778 3.5726 14.5091 3.99761 14.5435 4.77596C14.581 5.61987 14.5904 5.87297 14.5904 8.00779C14.5904 10.1426 14.581 10.3927 14.5435 11.2366Z"
-                  fill="#5A801B"
+                  fill="currentColor"
                 />
                 <path
                   d="M8.02961 3.8916C5.76049 3.8916 3.91943 5.73254 3.91943 8.00178C3.91943 10.271 5.76049 12.112 8.02961 12.112C10.2989 12.112 12.1398 10.271 12.1398 8.00178C12.1398 5.73254 10.2989 3.8916 8.02961 3.8916ZM8.02961 10.6679C6.55752 10.6679 5.36344 9.47399 5.36344 8.00178C5.36344 6.52957 6.55752 5.33561 8.02961 5.33561C9.50182 5.33561 10.6958 6.52957 10.6958 8.00178C10.6958 9.47399 9.50182 10.6679 8.02961 10.6679Z"
-                  fill="#5A801B"
+                  fill="currentColor"
                 />
                 <path
                   d="M13.262 3.72907C13.262 4.25896 12.8323 4.68861 12.3023 4.68861C11.7724 4.68861 11.3428 4.25896 11.3428 3.72907C11.3428 3.19906 11.7724 2.76953 12.3023 2.76953C12.8323 2.76953 13.262 3.19906 13.262 3.72907Z"
-                  fill="#5A801B"
+                  fill="currentColor"
                 />
               </g>
               <defs>
@@ -177,8 +185,12 @@ const footerLinks = [
                 </clipPath>
               </defs>
             </svg>
-          </NuxtLink>
-          <NuxtLink to="#" class="bg-primaryclr p-4 rounded-full">
+          </a>
+          <a
+            to="#"
+            target="_blank"
+            class="border text-secondaryclr border-[#D0E0B6] rounded-full p-4 cursor-pointer hover:bg-secondaryclr hover:text-bgclr transition-colors"
+          >
             <svg
               width="16"
               height="16"
@@ -189,15 +201,15 @@ const footerLinks = [
               <g clip-path="url(#clip0_142_55)">
                 <path
                   d="M2.31125 0.8125C1.21133 0.8125 0.492188 1.53476 0.492188 2.48407C0.492188 3.41241 1.18991 4.15527 2.26904 4.15527H2.28992C3.41135 4.15527 4.10925 3.41241 4.10925 2.48407C4.08829 1.53476 3.41135 0.8125 2.31125 0.8125Z"
-                  fill="white"
+                  fill="currentColor"
                 />
                 <path
                   d="M0.682251 5.47607H3.89777V15.1501H0.682251V5.47607Z"
-                  fill="white"
+                  fill="currentColor"
                 />
                 <path
                   d="M11.7903 5.24902C10.0557 5.24902 8.89249 6.87903 8.89249 6.87903V5.47607H5.67688V15.1501H8.8923V9.74774C8.8923 9.45853 8.91327 9.16977 8.99823 8.96295C9.23068 8.38544 9.75967 7.78714 10.648 7.78714C11.8116 7.78714 12.2769 8.67429 12.2769 9.97479V15.1501H15.4922V9.60318C15.4922 6.63174 13.9057 5.24902 11.7903 5.24902Z"
-                  fill="white"
+                  fill="currentColor"
                 />
               </g>
               <defs>
@@ -206,8 +218,12 @@ const footerLinks = [
                 </clipPath>
               </defs>
             </svg>
-          </NuxtLink>
-          <NuxtLink to="#" class="border border-[#D0E0B6] rounded-full p-4">
+          </a>
+          <a
+            to="#"
+            target="_blank"
+            class="border text-secondaryclr border-[#D0E0B6] rounded-full p-4 cursor-pointer hover:bg-secondaryclr hover:text-bgclr transition-colors"
+          >
             <svg
               width="16"
               height="16"
@@ -217,40 +233,34 @@ const footerLinks = [
             >
               <path
                 d="M9.23908 16V8.70218H11.6877L12.055 5.85725H9.23908V4.04118C9.23908 3.21776 9.4668 2.65661 10.6489 2.65661L12.1541 2.65599V0.111384C11.8938 0.0775563 11.0003 0 9.96029 0C7.78861 0 6.30184 1.32557 6.30184 3.75942V5.85725H3.84583V8.70218H6.30184V16H9.23908Z"
-                fill="#5A801B"
+                fill="currentColor"
               />
             </svg>
-          </NuxtLink>
+          </a>
         </div>
 
         <div class="flex items-center gap-4">
           <div>
-            <img
-              src="../assets/icons/footer-icons/paypal-3.png"
-              alt="paypal icon"
-            />
+            <img src="/icons/footer-icons/paypal-3.png" alt="paypal icon" />
           </div>
           <div>
             <img
-              src="../assets/icons/footer-icons/mastercard-2.png"
+              src="/icons/footer-icons/mastercard-2.png"
               alt="mastercard icon"
             />
           </div>
           <div>
-            <img src="../assets/icons/footer-icons/visa.png" alt="visa icon" />
+            <img src="/icons/footer-icons/visa.png" alt="visa icon" />
           </div>
           <div>
-            <img
-              src="../assets/icons/footer-icons/stripe-4.png"
-              alt="stripe icon"
-            />
+            <img src="/icons/footer-icons/stripe-4.png" alt="stripe icon" />
           </div>
         </div>
       </div>
 
       <!-- copyright info -->
       <div>
-        <p class="text-[18px] font-medium text-textclr/70 text-center pt-8">
+        <p class="text-[16px] font-medium text-textclr/70 text-center pt-8">
           Copyright &copy; 2009 - 2024 Thecodude Inc.
         </p>
       </div>
