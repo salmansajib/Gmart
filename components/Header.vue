@@ -11,7 +11,7 @@ const navLinks = [
 </script>
 
 <template>
-  <div>
+  <section>
     <!-- Upper part of the header -->
     <div
       class="flex items-center justify-between w-full max-w-[95%] md:container mx-auto"
@@ -130,7 +130,7 @@ const navLinks = [
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>
