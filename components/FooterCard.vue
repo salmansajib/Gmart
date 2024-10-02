@@ -19,13 +19,13 @@
         temporibus.
       </p>
       <div class="flex itemc gap-5">
-        <a href="#" target="_blank" class="hover:scale-105 transition-all">
+        <a href="#" target="_blank" class="hover:scale-95 transition-all">
           <img
             src="/public/images/footer-card-background/google-play-badge-logo-svgrepo-com 1.png"
             alt="Google play"
           />
         </a>
-        <a href="#" target="_blank" class="hover:scale-105 transition-all">
+        <a href="#" target="_blank" class="hover:scale-95 transition-all">
           <img
             src="/public/images/footer-card-background/download-on-the-app-store-apple-logo-svgrepo-com 1.png"
             alt="App store"
@@ -35,11 +35,3 @@
     </div>
   </div>
 </template>
-
-<style scoped>
-.footer {
-  background-image: url("/public/images/footer-card-background/Objects.png");
-  background-size: cover;
-  background-position: center;
-}
-</style>

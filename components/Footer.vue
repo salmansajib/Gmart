@@ -130,7 +130,7 @@ const footerLinks = [
             </svg>
           </div>
           <div class="flex flex-col">
-            <p class="text-[20px] font-semibold text-textclr">
+            <p class="text-[18px] font-semibold text-textclr">
               088 888 666 555
             </p>
             <span class="text-[12px] font-normal text-textclr/70"
@@ -143,7 +143,7 @@ const footerLinks = [
           <a
             to="#"
             target="_blank"
-            class="border text-secondaryclr border-[#D0E0B6] rounded-full p-4 cursor-pointer hover:bg-secondaryclr hover:text-bgclr transition-colors"
+            class="border text-secondaryclr border-[#D0E0B6] rounded-full p-3 cursor-pointer hover:bg-secondaryclr hover:text-bgclr transition-colors"
           >
             <svg
               width="16"
@@ -161,7 +161,7 @@ const footerLinks = [
           <a
             to="#"
             target="_blank"
-            class="border text-secondaryclr border-[#D0E0B6] rounded-full p-4 cursor-pointer hover:bg-secondaryclr hover:text-bgclr transition-colors"
+            class="border text-secondaryclr border-[#D0E0B6] rounded-full p-3 cursor-pointer hover:bg-secondaryclr hover:text-bgclr transition-colors"
           >
             <svg
               width="16"
@@ -194,7 +194,7 @@ const footerLinks = [
           <a
             to="#"
             target="_blank"
-            class="border text-secondaryclr border-[#D0E0B6] rounded-full p-4 cursor-pointer hover:bg-secondaryclr hover:text-bgclr transition-colors"
+            class="border text-secondaryclr border-[#D0E0B6] rounded-full p-3 cursor-pointer hover:bg-secondaryclr hover:text-bgclr transition-colors"
           >
             <svg
               width="16"
@@ -227,7 +227,7 @@ const footerLinks = [
           <a
             to="#"
             target="_blank"
-            class="border text-secondaryclr border-[#D0E0B6] rounded-full p-4 cursor-pointer hover:bg-secondaryclr hover:text-bgclr transition-colors"
+            class="border text-secondaryclr border-[#D0E0B6] rounded-full p-3 cursor-pointer hover:bg-secondaryclr hover:text-bgclr transition-colors"
           >
             <svg
               width="16"

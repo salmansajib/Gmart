@@ -15,7 +15,7 @@ export default {
       },
     },
     colors: {
-      bgclr: "#EEEEF0",
+      bgclr: "#F8F9FA",
       primaryclr: "#6B912C",
       secondaryclr: "#5A801B",
       textclr: "#394623",

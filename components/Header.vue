@@ -1,13 +1,5 @@
 <script setup>
 const totalItemsInCart = ref(8);
-
-const navLinks = [
-  { text: "Home", to: "#" },
-  { text: "Story", to: "#" },
-  { text: "Combo", to: "#" },
-  { text: "Offer", to: "#" },
-  { text: "Explore", to: "#" },
-];
 </script>
 
 <template>
@@ -17,7 +9,7 @@ const navLinks = [
       class="flex items-center justify-between w-full max-w-[95%] md:container mx-auto"
     >
       <!-- logo -->
-      <NuxtLink to="/">
+      <NuxtLink to="/" class="mb-2">
         <img src="/images/logo/Layer_1.png" alt="logo" />
       </NuxtLink>
       <!-- search field -->
@@ -61,13 +53,13 @@ const navLinks = [
     </div>
 
     <!-- lower part of the header -->
-    <div class="bg-primaryclr mt-7 py-3 w-full">
+    <div class="bg-primaryclr mt-7 h-[44px] flex items-center w-full">
       <div
         class="flex items-center justify-between max-w-[95%] md:container mx-auto"
       >
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-3">
           <button
-            class="group p-0 border-none bg-transparent cursor-pointer inline-flex items-center justify-center"
+            class="group bg-secondaryclr size-[44px] p-0 border-none bg-transparent cursor-pointer inline-flex items-center justify-center"
           >
             <svg
               width="25"
@@ -104,25 +96,13 @@ const navLinks = [
             </svg>
           </button>
 
-          <p class="text-[15px] font-medium text-bgclr">Categories</p>
+          <button class="text-[15px] font-medium text-bgclr">Categories</button>
         </div>
 
         <!-- Navigation Links -->
-        <nav>
-          <ul class="flex items-center gap-10">
-            <li
-              class="flex items-center"
-              v-for="link in navLinks"
-              :key="link.text"
-            >
-              <NuxtLink
-                class="text-sm text-bgclr/90 hover:text-bgclr"
-                :to="link.to"
-                >{{ link.text }}</NuxtLink
-              >
-            </li>
-          </ul>
-        </nav>
+        <div>
+          <Navigation />
+        </div>
 
         <!-- Rating -->
         <div>
@@ -136,7 +116,7 @@ const navLinks = [
 <style scoped>
 .group:hover .top-line,
 .group:hover .bottom-line {
-  width: 25px; /* Expand to full width */
-  x: 0; /* Move to the far left (0 position) to expand from both sides */
+  width: 25px;
+  x: 0;
 }
 </style>
