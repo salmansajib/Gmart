@@ -6,8 +6,10 @@
   >
     <!-- Left Side: Mobile Mockup -->
 
-    <div class="-mb-[300px] hidden md:block">
-      <img src="/public/images/footer-card-background/Phone.png" alt="" />
+    <div>
+      <div class="-mb-[300px] hidden md:block">
+        <img src="/public/images/footer-card-background/Phone.png" alt="" />
+      </div>
     </div>
 
     <!-- Right Side: Download Text and Buttons -->

@@ -19,7 +19,7 @@ export default {
       primaryclr: "#6B912C",
       secondaryclr: "#5A801B",
       textclr: "#394623",
-      accentclr: "FFC700",
+      accentclr: "#FFC700",
     },
   },
   plugins: [],

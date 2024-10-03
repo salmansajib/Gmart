@@ -6,7 +6,7 @@ const totalItemsInCart = ref(8);
   <section>
     <!-- Upper part of the header -->
     <div
-      class="flex items-center justify-between w-full max-w-[95%] md:container mx-auto"
+      class="flex items-center justify-between w-full max-w-[95%] md:container md:px-2 mx-auto"
     >
       <!-- logo -->
       <NuxtLink to="/" class="mb-2">
@@ -55,7 +55,7 @@ const totalItemsInCart = ref(8);
     <!-- lower part of the header -->
     <div class="bg-primaryclr mt-7 h-[44px] flex items-center w-full">
       <div
-        class="flex items-center justify-between max-w-[95%] md:container mx-auto"
+        class="flex items-center justify-between max-w-[95%] md:container md:px-2 mx-auto"
       >
         <div class="flex items-center gap-3">
           <button

@@ -65,7 +65,7 @@ const footerLinks = [
 
 <template>
   <footer class="w-full mt-10">
-    <section class="max-w-[95%] md:container mx-auto">
+    <section class="max-w-[95%] md:container md:px-2 mx-auto">
       <!-- footer card -->
       <div class="mb-12">
         <FooterCard />

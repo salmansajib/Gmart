@@ -2,8 +2,10 @@
 
 <template>
   <div>
-    <div class="min-h-[70vh] container mx-auto px-2">
-      <h1>Products</h1>
+    <div class="max-w-[95%] md:container md:px-2 mx-auto">
+      <div>
+        <Hero />
+      </div>
     </div>
   </div>
 </template>

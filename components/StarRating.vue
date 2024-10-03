@@ -39,8 +39,8 @@ const formattedReviews = computed(() => {
     </span>
 
     <!-- Format the reviews count -->
-    <span class="ml-2 text-sm text-[#CCE1A7]"
-      >{{ formattedReviews }} reviews</span
-    >
+    <span class="ml-2 text-sm text-[#CCE1A7]">
+      {{ formattedReviews }} review
+    </span>
   </div>
 </template>
