@@ -10,6 +10,21 @@ const props = defineProps({
     required: true,
     default: 0,
   },
+  reviewColor: {
+    type: String,
+    required: false,
+    default: "#CCE1A7",
+  },
+  starSize: {
+    type: Number,
+    required: false,
+    default: 15,
+  },
+  reviewFontSize: {
+    type: String,
+    required: false,
+    default: "14px",
+  },
 });
 
 // Computed property to format the reviews count
@@ -26,8 +41,8 @@ const formattedReviews = computed(() => {
     <!-- Loop through 5 stars -->
     <span v-for="(star, index) in 5" :key="index" class="ml-1">
       <svg
-        width="17"
-        height="15"
+        :width="starSize"
+        :height="starSize"
         viewBox="0 0 17 15"
         :fill="index < Math.floor(rating) ? '#FFC700' : '#B5CF88'"
         xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +54,10 @@ const formattedReviews = computed(() => {
     </span>
 
     <!-- Format the reviews count -->
-    <span class="ml-2 text-sm text-[#CCE1A7]">
+    <span
+      class="ml-2 text-lg"
+      :style="{ color: reviewColor, fontSize: reviewFontSize }"
+    >
       {{ formattedReviews }} review
     </span>
   </div>

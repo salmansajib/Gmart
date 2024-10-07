@@ -6,6 +6,9 @@
       <div>
         <Hero />
       </div>
+      <div>
+        <DailyBestSells />
+      </div>
     </div>
   </div>
 </template>

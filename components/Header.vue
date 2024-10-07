@@ -59,39 +59,21 @@ const totalItemsInCart = ref(8);
       >
         <div class="flex items-center gap-3">
           <button
-            class="group bg-secondaryclr size-[44px] p-0 border-none bg-transparent cursor-pointer inline-flex items-center justify-center"
+            class="bg-secondaryclr size-[44px] p-0 border-none bg-transparent cursor-pointer inline-flex items-center justify-center"
           >
             <svg
-              width="25"
-              height="16"
-              viewBox="0 0 25 16"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              viewBox="0 0 24 24"
             >
-              <rect
-                class="top-line transition-all duration-300"
-                x="5"
-                width="15"
-                height="2"
-                rx="1"
-                fill="white"
+              <path
+                fill="#F8F9FA"
+                d="M18 6.41L16.59 5L12 9.58L7.41 5L6 6.41l6 6z"
               />
-              <rect
-                class="middle-line"
-                y="7"
-                width="25"
-                height="2"
-                rx="1"
-                fill="white"
-              />
-              <rect
-                class="bottom-line transition-all duration-300"
-                x="5"
-                y="14"
-                width="15"
-                height="2"
-                rx="1"
-                fill="white"
+              <path
+                fill="#F8F9FA"
+                d="m18 13l-1.41-1.41L12 16.17l-4.59-4.58L6 13l6 6z"
               />
             </svg>
           </button>
@@ -113,10 +95,10 @@ const totalItemsInCart = ref(8);
   </section>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 .group:hover .top-line,
 .group:hover .bottom-line {
   width: 25px;
   x: 0;
 }
-</style>
+</style> -->

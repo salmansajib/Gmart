@@ -15,8 +15,9 @@ const navLinks = [
         <NuxtLink
           class="text-sm text-bgclr/90 p-1 hover:text-[#fff] transition-colors"
           :to="link.to"
-          >{{ link.text }}</NuxtLink
         >
+          {{ link.text }}
+        </NuxtLink>
       </li>
     </ul>
   </nav>
