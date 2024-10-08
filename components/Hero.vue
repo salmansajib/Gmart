@@ -12,7 +12,7 @@
     </div>
 
     <div>
-      <Patrners />
+      <Partners />
     </div>
   </section>
 </template>

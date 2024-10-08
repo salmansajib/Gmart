@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Fresh Avocado",
+    "price": "$20.99 / KG",
+    "button": "Add To Bag",
+    "image": "/images/product-images/featured/avocado.png"
+  },
+  {
+    "name": "Red Crab",
+    "price": "$2.99 / KG",
+    "button": "Add To Bag",
+    "image": "/images/product-images/featured/crab.png"
+  },
+  {
+    "name": "Strawberry",
+    "price": "$3.99 / KG",
+    "button": "Add To Bag",
+    "image": "/images/product-images/featured/strawberry.png"
+  },
+  {
+    "name": "Lamb Mutton",
+    "price": "$2.99 / KG",
+    "button": "Add To Bag",
+    "image": "/images/product-images/featured/lamb.png"
+  },
+  {
+    "name": "Lettuce Salad Pata",
+    "price": "$2.99 / KG",
+    "button": "Add To Bag",
+    "image": "/images/product-images/featured/cabbage.png"
+  },
+  {
+    "name": "Salmon Fish",
+    "price": "$2.99 / KG",
+    "button": "Add To Bag",
+    "image": "/images/product-images/featured/salmon.png"
+  }
+]

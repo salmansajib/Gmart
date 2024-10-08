@@ -1,94 +1,14 @@
-<script setup>
-const footerLinks = [
-  {
-    category: "About Company",
-    links: [
-      { name: "About Us", url: "#" },
-      { name: "FAQ", url: "#" },
-      { name: "Privacy Policy", url: "#" },
-      { name: "Terms & Conditions", url: "#" },
-      { name: "Refund Policy", url: "#" },
-      { name: "Contact Us", url: "#" },
-    ],
-  },
-  {
-    category: "Breakfast & Dairy",
-    links: [
-      { name: "Milk & Flavoured Milk", url: "#" },
-      { name: "Butter & Margarine", url: "#" },
-      { name: "Cheese", url: "#" },
-      { name: "Egg Substitutes", url: "#" },
-      { name: "Honey", url: "#" },
-      { name: "Marmalades", url: "#" },
-      { name: "Cake", url: "#" },
-    ],
-  },
-  {
-    category: "Meat & Seafood",
-    links: [
-      { name: "Breakfast Sausage", url: "#" },
-      { name: "Diner Sausage", url: "#" },
-      { name: "Beef", url: "#" },
-      { name: "Chicken", url: "#" },
-      { name: "Shrimp", url: "#" },
-      { name: "Sliced Deli Meat", url: "#" },
-      { name: "Crab & Shellfish", url: "#" },
-      { name: "Farm Raised Fillets", url: "#" },
-    ],
-  },
-  {
-    category: "Beverages",
-    links: [
-      { name: "Water", url: "#" },
-      { name: "Sparkling Water", url: "#" },
-      { name: "Soda & Pop", url: "#" },
-      { name: "Coffee", url: "#" },
-      { name: "Milk & Plant", url: "#" },
-      { name: "Tea & Kombucha", url: "#" },
-      { name: "Black Coffee", url: "#" },
-    ],
-  },
-  {
-    category: "Breads & Bakery",
-    links: [
-      { name: "Milk & Flavoured Milk", url: "#" },
-      { name: "Butter & Margarine", url: "#" },
-      { name: "Cheese", url: "#" },
-      { name: "Egg Substitutes", url: "#" },
-      { name: "Honey", url: "#" },
-      { name: "Marmalades", url: "#" },
-      { name: "Yogurt", url: "#" },
-    ],
-  },
-];
-</script>
-
 <template>
   <footer class="w-full mt-10">
     <section class="max-w-[95%] md:container md:px-2 mx-auto">
       <!-- footer card -->
       <div class="mb-12">
-        <FooterCard />
+        <MobileApp />
       </div>
 
       <!-- footer links -->
-      <div
-        class="grid justify-items-left md:justify-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
-      >
-        <div v-for="(section, index) in footerLinks" :key="index">
-          <h3 class="text-[16px] md:text-[18px] font-semibold text-textclr">
-            {{ section.category }}
-          </h3>
-          <ul class="mt-4 space-y-2">
-            <li v-for="(link, linkIndex) in section.links" :key="linkIndex">
-              <NuxtLink
-                class="text-textclr/70 text-[14px] md:text-[16px] hover:text-textclr"
-                :to="link.url"
-                >{{ link.name }}</NuxtLink
-              >
-            </li>
-          </ul>
-        </div>
+      <div>
+        <FooterLinks />
       </div>
 
       <!-- contact info -->

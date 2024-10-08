@@ -21,6 +21,7 @@ const props = defineProps({
 
     <!-- buttons -->
     <div class="flex items-center gap-2">
+      <!-- prev button -->
       <button
         @click="onPrev"
         class="p-[5px] border text-[#9BAB80] border-[#9BAB80] rounded-full hover:bg-[#9BAB80] hover:text-[#fff] transition-colors"
@@ -37,6 +38,7 @@ const props = defineProps({
           />
         </svg>
       </button>
+      <!-- next button -->
       <button
         @click="onNext"
         class="p-[5px] border text-[#9BAB80] border-[#9BAB80] rounded-full hover:bg-[#9BAB80] hover:text-[#fff] transition-colors"

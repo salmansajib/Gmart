@@ -70,5 +70,41 @@
     "availability": "75%",
     "image": "/images/product-images/daily-best-sells/salmon-fish.png",
     "buttonText": "Add To Bag"
+  },
+  {
+    "id": 1,
+    "name": "Strawberry",
+    "price": "$3.99",
+    "weight": "1 KG",
+    "discount": "12% Off",
+    "rating": {
+      "stars": 4,
+      "reviews": 18
+    },
+    "sold": {
+      "current": 50,
+      "total": 220
+    },
+    "availability": "75%",
+    "image": "/images/product-images/daily-best-sells/strawberry.png",
+    "buttonText": "Add To Bag"
+  },
+  {
+    "id": 2,
+    "name": "Lamb Mutton",
+    "price": "$10.99",
+    "weight": "1 KG",
+    "discount": "20% Off",
+    "rating": {
+      "stars": 4,
+      "reviews": 18
+    },
+    "sold": {
+      "current": 50,
+      "total": 220
+    },
+    "availability": "75%",
+    "image": "/images/product-images/daily-best-sells/lamb.png",
+    "buttonText": "Add To Bag"
   }
 ]

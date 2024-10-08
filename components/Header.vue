@@ -94,11 +94,3 @@ const totalItemsInCart = ref(8);
     </div>
   </section>
 </template>
-
-<!-- <style scoped>
-.group:hover .top-line,
-.group:hover .bottom-line {
-  width: 25px;
-  x: 0;
-}
-</style> -->

@@ -30,9 +30,7 @@
       <div
         class="absolute -top-[25px] -right-[70px] bg-accentclr size-[100px] rounded-full flex items-center justify-center before:content-[''] before:absolute before:top-1 before:left-1 before:w-full before:h-full before:border-2 before:border-dashed before:border-bgclr before:rounded-full"
       >
-        <h2 class="text-[20px] flex flex-col items-center leading-[1]">
-          15% <span class="text-[30px] font-semibold">Off</span>
-        </h2>
+        <img src="/public/images/hero-image/discount.png" alt="" />
       </div>
     </div>
   </section>
